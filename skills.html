@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swastik Vats | Skills</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video id="light-video" autoplay muted loop playsinline>
+      <source src="assets/light-bg.mp4" type="video/mp4">
+    </video>
+    <video id="dark-video" autoplay muted loop playsinline>
+      <source src="assets/dark-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <header>
+    <div class="logo">Swastik Vats</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="skills.html" class="active">Skills</a>
+    </nav>
+    <button id="mode-toggle" title="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>My <span class="highlight">Skills</span></h1>
+      <p class="subtitle">Technical Expertise & Professional Competencies</p>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="skills-container">
+        <!-- Web Development -->
+        <div class="skills-category skill-1">
+          <h2>Web Development</h2>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Responsive Design & UI Development</li>
+          </ul>
+          <div class="date">Since 2020</div>
+        </div>
+
+        <!-- Programming & Tools -->
+        <div class="skills-category skill-2">
+          <h2>Programming & Tools</h2>
+          <ul>
+            <li>Python (Core Projects & Automation)</li>
+            <li>Git & GitHub (Version Control)</li>
+            <li>Agile & Scrum Methodologies</li>
+          </ul>
+          <div class="date">Since 2019</div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills-category skill-3">
+          <h2>Databases</h2>
+          <ul>
+            <li>NoSQL, MongoDB</li>
+          </ul>
+          <div class="date">Since 2021</div>
+        </div>
+
+        <!-- Software & Technologies -->
+        <div class="skills-category skill-4">
+          <h2>Software & Technologies</h2>
+          <ul>
+           
+            <li>NLP (Natural Language Processing)</li>
+            <li>Voice Assistant & Automation Tools</li>
+            <li>Cloud Computing Fundamentals</li>
+          </ul>
+          <div class="date">Since 2023</div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category skill-5">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Problem Solving & Analytical Thinking</li>
+            <li>Team Collaboration & Communication</li>
+          </ul>
+          <div class="date">Ongoing</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Swastik Vats. Built with 💖</p>
+  </footer>
+
+  <button id="scrollToTop">⬆️</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+
+<!-- Add this right before closing </body> -->
+<script>
+  // Initialize dark mode immediately if needed
+  document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+      document.getElementById("light-video").style.display = "none";
+      document.getElementById("dark-video").style.display = "block";
+    }
+  });
+</script>
+</html>

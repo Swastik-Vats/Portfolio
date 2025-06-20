@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swastik Vats | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video id="light-video" autoplay muted loop playsinline>
+      <source src="assets/light-bg.mp4" type="video/mp4">
+    </video>
+    <video id="dark-video" autoplay muted loop playsinline>
+      <source src="assets/dark-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+<header>
+  <div class="logo">Swastik Vats</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="skills.html">Skills</a>
+  </nav>
+  <button id="mode-toggle" title="Toggle Dark Mode">🌙</button>
+</header>
+
+
+
+
+<section class="hero">
+  <h1>Hello, I'm <span class="highlight">Swastik Vats</span></h1>
+  <div class="typed-container">
+    <span id="typed"></span>
+  </div>
+  <div class="hero-buttons">
+    <a href="#projects" class="btn">See My Work</a>
+    <a href="https://drive.google.com/file/d/1TKzBibwWGnOQesSdoBWb28-rs7qE8wW3/view" target="_blank" download class="btn secondary-btn">Download Resume</a>
+  </div>
+</section>
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a developer with a strong foundation in backend systems and web technologies. With a passion for clean code and collaborative software development,I had honed skills in Python, JavaScript, databases, and prompt engineering—leveraging precise and structured commands to optimize AI interactions.
+
+Currently pursuing a B.Tech in Computer Science at SRM University, Swastik has gained valuable experience through an AICTE-certified internship with Oasis Infobyte and multiple independent projects. 
+Some notable projects include the AI Review Analyzer, which applies NLP for sentiment analysis and topic modeling, and J.A.R.V.I.S., a voice-activated AI assistant designed for automation and system updates. Additionally,I had  developed a web-based BMI calculator and a random password generator, demonstrating a diverse skill set in software development.
+Beyond technical expertise,I had actively participated in competitions such as the Intel AI Hackathon, showcasing problem-solving and analytical skills. Certified in Cloud Computing and Distributed Systems,I stays at the forefront of emerging technologies. With proficiency in Git, Agile, Scrum methodologies, and programming languages like HTML, CSS, JavaScript, and MongoDB.
+Whether it’s coding, AI-driven development, or prompt engineering,we developers brings a methodical and intellectually curious approach to every project. An emerging force in tech, ready to tackle new challenges and drive impactful innovations.
+</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>AI Assistant</h3>
+        <p>The AI Assistant 'J.A.R.V.I.S.' is a voice-activated system built using Python, HTML, CSS, and JavaScript. It leverages speech recognition to automate tasks, provide system updates, and enhance user interaction. Designed for efficiency, it enables seamless voice-based control over various functions.
+</p>
+        <a href="https://github.com/Swastik-Vats/Ryzen">View</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Another cool project description here.</p>
+        <a href="#">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+<!-- Social Media Panel -->
+<div class="social-panel">
+  <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+    <img src="assets/icons/linkedin.png" alt="LinkedIn">
+  </a>
+  <a href="https://github.com" target="_blank" class="social-icon" title="GitHub">
+    <img src="assets/icons/github.png" alt="GitHub">
+  </a>
+  <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+    <img src="assets/icons/instagram.png" alt="Instagram">
+  </a>
+  <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
+    <img src="assets/icons/facebook.png" alt="Facebook">
+  </a>
+  <a href="https://leetcode.com" target="_blank" class="social-icon" title="LeetCode">
+    <img src="assets/icons/leetcode.png" alt="LeetCode">
+  </a>
+</div>
+
+
+
+
+<section id="flash-cards" class="section">
+  <h2>Project Highlights</h2>
+  <div class="cards-container">
+    
+    <!-- Latest Project Card -->
+    <div class="flash-card latest-project">
+      <div class="card-header">
+        <div class="card-icon">🚀</div>
+        <h3>Latest Project</h3>
+      </div>
+      <div class="card-content">
+        <h4>AI Review Analyzer</h4>
+        <p>NLP-powered sentiment analysis tool that processes customer feedback in real-time.</p>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>NLTK</span>
+          <span>Flask</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="card-link">View Case Study →</a>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 100%"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Working On Card -->
+    <div class="flash-card working-on">
+      <div class="card-header">
+        <div class="card-icon">👨‍💻</div>
+        <h3>Working On</h3>
+      </div>
+      <div class="card-content">
+        <h4>J.A.R.V.I.S. 2.0</h4>
+        <p>Next-gen voice assistant with enhanced NLP capabilities and home automation.</p>
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>WebSockets</span>
+          <span>IoT</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="card-link">Follow Progress →</a>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 65%"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- News Points Card -->
+    <div class="flash-card news-points">
+      <div class="card-header">
+        <div class="card-icon">📰</div>
+        <h3>News Points</h3>
+      </div>
+      <div class="card-content">
+        <ul class="news-list">
+          <li>Featured in "AI Today" magazine</li>
+          <li>Speaker at DevCon 2025</li>
+          <li>Open sourcing 2 projects this month</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="card-link">Read More →</a>
+      </div>
+    </div>
+    
+    <!-- Status Card -->
+    <div class="flash-card status">
+      <div class="card-header">
+        <div class="card-icon">🔍</div>
+        <h3>Current Status</h3>
+      </div>
+      <div class="card-content">
+        <div class="status-message">
+          <p>👋 Available for collaborations</p>
+          <p>💡 Exploring AI/ML applications</p>
+          <p>📚 Learning advanced NLP techniques</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="status-indicator active"></div>
+        <span>Actively working</span>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+  <footer>
+    <p>© 2025 Swastik Vats. Built with 💖</p>
+  </footer>
+
+  <button id="scrollToTop">⬆️</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
